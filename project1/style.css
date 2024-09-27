@@ -42,7 +42,7 @@ p {
 
 /* Section Styles */
 .intro {
-  padding: 60px;
+  padding: 60px, 0;
   max-width: 800px;
   margin: 0 auto;
 }
