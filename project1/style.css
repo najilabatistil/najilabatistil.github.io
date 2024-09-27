@@ -19,6 +19,7 @@ p {
   font-size: 1.125rem;
   max-width: 800px;
   margin: 0 auto 25px;
+  padding: 0 15px;
 }
 
 /* Header */
