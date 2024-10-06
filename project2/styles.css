@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'Brutalista';
+  src: url('../fonts/Brutalista Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+
+/* NAVBAR STYLES */
+.navbar {
+  background-color: #fafafa;
+  font-family: Neusa-Bold;
+  font-size: 1.5rem;
+}
+
+.navbar-logo {
+  color: #006E41
+}
+
+.navbar-logo:hover {
+  color: #009959;
+}
+
+.navbar-items li a {
+  color: #006E41;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #009959;
+}
+
+.dropdown-menu li a {
+  white-space: normal;
+}
+
+.dropdown-item {
+  font-family: Brutalista;
+  font-size: 16px;
+}
+
+.dropdown-item:hover {
+  background-color: #006E41;
+  color: white;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+/* CARD STYLE */
+.card:hover {
+    box-shadow: 0 4px 6px #777777; /* Solid black shadow */
+}
+
+/* HEADING STYLES */
+.main-heading {
+  font-family: Neusa-Bold;
+  font-size: 3.75rem;
+  color: #006E41
+}
+
+.green-heading {
+  font-family: Neusa-Bold;
+  font-size: 3rem;
+  color: #006E41
+}
+
+.white-heading {
+  font-family: Neusa-Bold;
+  font-size: 3rem;
+  color: #FFFFFF;
+}
+
+.green-heading-2 {
+  font-family: Neusa-Bold;
+  font-size: 2.25rem;
+  color: #006E41
+}
+
+.white-heading-2 {
+  font-family: Neusa-Bold;
+  font-size: 2.25rem;
+  color: #FFFFFF;
+}
+
+.green-heading-3 {
+  font-family: Neusa-Bold;
+  font-size: 1.5rem;
+  color: #006E41
+}
+
+.white-heading-3 {
+  font-family: Neusa-Bold;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+
+/* PARAGRAPH STYLES */
+.black-paragraph {
+  font-family: Brutalista;
+  font-size: 1.125rem;
+}
+
+.white-paragraph {
+  font-family: Brutalista;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+}
+
+/* BUTTON STYLES */
+.white-button {
+  font-family: Neusa-Bold;
+  font-size: 1.75rem;
+  background-color: #FFFFFF;
+  color: #006E41;
+  border: 1px solid #006E41;
+  border-radius: 3px;
+}
+
+.white-button:hover {
+  background-color: #006E41;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+.white-button-2 {
+  font-family: Neusa-Bold;
+  font-size: 1.5rem;
+  background-color: #FFFFFF;
+  color: #006E41;
+  border: 1px solid #006E41;
+  border-radius: 3px;
+}
+
+.white-button-2:hover {
+  background-color: #006E41;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+/* FOOTER STYLES */
+.white-footer {
+  font-family: Brutalista;
+  font-size: 12px;
+  color:#FFFFFF;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #cccccc;
+}
