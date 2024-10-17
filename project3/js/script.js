@@ -11,7 +11,7 @@ function createContent(array, containerName, folder, code) {
           <div class="img-container">
             <img src="img/`+ folder +`/`+ array[i] + `.png" class="w-100">
           </div>
-          <h5 class="title mt-2 ">`+ array[i] + `</h5>
+          <h5 class="title mt-2">`+ array[i] + `</h5>
         </div>
       </div>`;
   }
