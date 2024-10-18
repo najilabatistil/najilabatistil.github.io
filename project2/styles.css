@@ -53,37 +53,37 @@ html {
 
 /* CARD STYLE */
 .card:hover {
-    box-shadow: 0 4px 6px #777777; /* Solid black shadow */
+    background-color:#f3f3f3
 }
 
 /* HEADING STYLES */
 .main-heading {
   font-family: Neusa-Bold;
-  font-size: 3.75rem;
+  font-size: 3rem;
   color: #006E41
 }
 
 .green-heading {
   font-family: Neusa-Bold;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #006E41
 }
 
 .white-heading {
   font-family: Neusa-Bold;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #FFFFFF;
 }
 
 .green-heading-2 {
   font-family: Neusa-Bold;
-  font-size: 2.25rem;
+  font-size: 2rem;
   color: #006E41
 }
 
 .white-heading-2 {
   font-family: Neusa-Bold;
-  font-size: 2.25rem;
+  font-size: 2rem;
   color: #FFFFFF;
 }
 
@@ -102,19 +102,19 @@ html {
 /* PARAGRAPH STYLES */
 .black-paragraph {
   font-family: Brutalista;
-  font-size: 1.125rem;
+  font-size: 1.05rem;
 }
 
 .white-paragraph {
   font-family: Brutalista;
-  font-size: 1.125rem;
+  font-size: 1.05rem;
   color: #FFFFFF;
 }
 
 /* BUTTON STYLES */
 .white-button {
   font-family: Neusa-Bold;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   background-color: #FFFFFF;
   color: #006E41;
   border: 1px solid #006E41;
@@ -129,7 +129,7 @@ html {
 
 .white-button-2 {
   font-family: Neusa-Bold;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   background-color: #FFFFFF;
   color: #006E41;
   border: 1px solid #006E41;
