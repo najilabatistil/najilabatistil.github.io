@@ -98,8 +98,14 @@ p {
   font-size: 1.35rem;
 }
 
+.name {
+  font-family: svbold;
+  font-size: 1.25rem;
+}
+
 .img-container {
-  background-color: #ffffff;
+  background-color: #8ac5ee;
+  border: 2px solid #00509A;
 }
 
 /* FOOTER  */
