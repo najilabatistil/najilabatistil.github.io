@@ -27,7 +27,6 @@ const loadCatbook = async () => {
     loadingBar.style.width = (((i - pageStart) + 1) / 6) * 100 + '%';
   }
 }
-loadCatbook();
 
 var nextBtn = document.getElementById("nextBtn");
 var prevBtn = document.getElementById("prevBtn");
@@ -47,7 +46,6 @@ function checkButtonState() {
     prevBtn.classList.remove("disabled");
   }
 }
-checkButtonState();
 
 var pageNumber = document.getElementById("pageNumber");
 
@@ -70,3 +68,6 @@ function prevPage() {
 
   checkButtonState();
 }
+
+checkButtonState();
+loadCatbook();
