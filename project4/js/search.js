@@ -3,7 +3,7 @@ var loadingBar = document.getElementById("loadingBar");
 
 const loadCat = async (searchTerm) => {
   container.innerHTML = "";
-  loadingBar.style.width = "0%";
+  loadingBar.style.width = "25%";
 
   const response = await fetch('https://api.neko-atsume.emshea.com/cats/' + searchTerm);
   const cat = await response.json();
