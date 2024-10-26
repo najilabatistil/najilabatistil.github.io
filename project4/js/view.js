@@ -6,7 +6,11 @@ var personality = document.getElementById("catPersonality");
 var level = document.getElementById("catLevel");
 var memento = document.getElementById("catMemento");
 
+var loadingBar = document.getElementById("loadingBar");
+
 const loadCat = async (searchTerm) => {
+  loadingBar.style.width = "25%";
+
   const response = await fetch('https://api.neko-atsume.emshea.com/cats/' + searchTerm);
   const cat = await response.json();
 
@@ -18,7 +22,7 @@ const loadCat = async (searchTerm) => {
   level.innerHTML = cat.CatPowerLevel;
   memento.innerHTML = cat.Memento;
 
-  console.log(cat);
+  loadingBar.style.width = "100%";
 }
 
 const queryString = window.location.search;

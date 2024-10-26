@@ -30,10 +30,14 @@ const loadCat = async (searchTerm) => {
 }
 
 function searchCat() {
-  var searchTerm = document.getElementById("searchTerm").value;
+  var searchTerm = document.getElementById("searchField").value;
   loadCat(searchTerm);
 }
 
-document.getElementById("searchTerm").addEventListener("keypress", event => {
+document.getElementById("searchField").addEventListener("keypress", event => {
   if (event.key === "Enter") searchCat();
 });
+
+window.onload = function() {
+  document.getElementById('searchField').value = '';
+  }
