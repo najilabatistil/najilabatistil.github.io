@@ -23,10 +23,9 @@ const loadCat = async (searchTerm) => {
             </div>
           </div>
         </div>`;
-
-    loadingBar.style.width = '100%';
   }
 
+  loadingBar.style.width = '100%';
 }
 
 function searchCat() {
@@ -34,10 +33,12 @@ function searchCat() {
   loadCat(searchTerm);
 }
 
+// Search cat using enter key instead of button
 document.getElementById("searchField").addEventListener("keypress", event => {
   if (event.key === "Enter") searchCat();
 });
 
+// Clear search bar on refresh
 window.onload = function() {
   document.getElementById('searchField').value = '';
-  }
+}

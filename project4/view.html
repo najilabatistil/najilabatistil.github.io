@@ -110,21 +110,31 @@
       </div>
     </div>
 
-    <!-- Back Button -->
-    <div class="row mt-4 mb-5">
+    <!-- Nav Buttons -->
+    <div class="row mt-4 d-flex justify-content-center">
       <div class="col text-center mb-3">
-        <a class="btn nav-btn p-1" href="javascript:history.back()" style="font-size: 1.25rem; width: 130px">Go back</a>
+        <a class="btn nav-btn p-1" id="prevBtn" onclick="prevCat()" style="font-size: 1.25rem; width: 130px">Previous</a>
+      </div>
+      <div class="col text-center mb-3">
+        <a class="btn nav-btn p-1" id="nextBtn" onclick="nextCat()" style="font-size: 1.25rem; width: 130px">Next</a>
       </div>
     </div>
-
+    
+    <!-- Close Button -->
+    <div class="row mb-5">
+      <div class="col text-center mb-3">
+        <a class="btn nav-btn p-1" href="javascript:history.back()" style="font-size: 1.25rem; width: 130px">Close</a>
+      </div>
+    </div>
   </div>
-
 
   <!-- FOOTER -->
   <footer class="footer mt-auto">
     <div class="container p-4">
-      <span>Images and data provided by <a href="https://neko-atsume.emshea.com/">Neko Atsume API</a> <br>
-        All rights to game assets belong to <a href="http://www.hit-point.co.jp/">Hit-Point Co., Ltd.</a></span>
+      <p style="font-size: medium;">Images and data provided by <a href="https://neko-atsume.emshea.com/">Neko Atsume API</a> <br>
+        All rights to game assets belong to <a href="http://www.hit-point.co.jp/">Hit-Point Co., Ltd.</a>
+      </p>
+      <p style="font-size: medium;"><a href="../">Go back to my projects page</a></p>
     </div>
   </footer>
 

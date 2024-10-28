@@ -7,6 +7,8 @@ const loadCatbook = async () => {
   var pageStart = 1 + ((page - 1) * 6);
   var pageTotal = pageStart + 5;
 
+  loadingBar.style.width = "5%";
+
   for (var i = pageStart; i <= pageTotal; i++) {
     var response = await fetch('https://api.neko-atsume.emshea.com/cats/' + i);
     var cat = await response.json();
@@ -24,7 +26,7 @@ const loadCatbook = async () => {
           </div>
         </div>`;
 
-    loadingBar.style.width = (((i - pageStart) + 1) / 6) * 100 + '%';
+    loadingBar.style.width = 5 + (((i - pageStart) + 1)) * (95 / 6) + '%';
   }
 }
 
@@ -32,14 +34,14 @@ var nextBtn = document.getElementById("nextBtn");
 var prevBtn = document.getElementById("prevBtn");
 
 function checkButtonState() {
-  // Checks if next page button should be disabled
+  // Check if next page button should be disabled
   if (page >= 11) {
     nextBtn.classList.add("disabled");
   } else {
     nextBtn.classList.remove("disabled");
   }
 
-  // Checks if prev page button should be disabled
+  // Check if prev page button should be disabled
   if (page <= 1) {
     prevBtn.classList.add("disabled");
   } else {
