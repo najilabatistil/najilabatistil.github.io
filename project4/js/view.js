@@ -45,7 +45,7 @@ const loadCat = async (searchTerm) => {
 
   currentCatId = parseInt(cat.CatId);
 
-  history.replaceState(null, null, "?cat="+cat.CatName);
+  history.replaceState(null, null, "?cat=" + cat.CatName);
   checkButtonState();
   loadingBar.style.width = "100%";
 }

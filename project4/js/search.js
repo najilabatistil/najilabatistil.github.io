@@ -8,9 +8,7 @@ const loadCat = async (searchTerm) => {
   const response = await fetch('https://api.neko-atsume.emshea.com/cats/' + searchTerm);
   const cat = await response.json();
 
-  if (cat.CatName == undefined) {
-    container.innerHTML = `<h3 class="d-flex justify-content-center p-4">No cat found.</h3>`;
-  } else {
+  if (cat.CatName) {
     container.innerHTML += `
         <div class="col-12 col-sm-6 col-md-6 col-lg-4 my-4">
           <a href="view.html?cat=` + cat.CatName + `" style="text-decoration: none">
@@ -23,6 +21,9 @@ const loadCat = async (searchTerm) => {
             </div>
           </div>
         </div>`;
+    
+  } else {
+    container.innerHTML = `<h3 class="d-flex justify-content-center p-4">No cat found. Please try again.</h3>`;
   }
 
   loadingBar.style.width = '100%';
