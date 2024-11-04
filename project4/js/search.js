@@ -23,7 +23,7 @@ const loadCat = async (searchTerm) => {
         </div>`;
     
   } else {
-    container.innerHTML = `<h3 class="d-flex justify-content-center p-4">No cat found. Please try again.</h3>`;
+    container.innerHTML = `<h3 class="d-flex justify-content-center text-center p-4">No cat found. Please try again.</h3>`;
   }
 
   loadingBar.style.width = '100%';
