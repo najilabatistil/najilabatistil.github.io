@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'svthin';
-  src: url('../../fonts/svthin.ttf') format('truetype');
+  src: url('../../assets/fonts/project3/svthin.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'svbold';
-  src: url('../../fonts/svbold.ttf') format('truetype');
+  src: url('../../assets/fonts/project3/svbold.ttf') format('truetype');
 }
 
 .navbar {
