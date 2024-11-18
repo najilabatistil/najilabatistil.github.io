@@ -1,10 +1,16 @@
+/* FONTS */
+@import url(https://db.onlinewebfonts.com/c/0df48aa97e8bc658253c8d1c6ee63799?family=Neusa-Bold); 
+@import url(https://db.onlinewebfonts.com/c/c1becb8665499a788c69e60d6b113a73?family=Neusa+W00+SemiBold);
+@import url(https://db.onlinewebfonts.com/c/370f6c95a7b197f48e91028e503ad330?family=Neusa+Next+Std+Trial+Wide+Medium); 
+
 @font-face {
   font-family: 'Brutalista';
-  src: url('../assets/fonts/project2/Brutalista\ Medium.ttf') format('truetype');
+  src: url('../assets/fonts/project2/Brutalista-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
+/* Scroll Padding */
 html {
   scroll-padding-top: 80px;
 }
@@ -12,43 +18,42 @@ html {
 /* NAVBAR STYLES */
 .navbar {
   background-color: #fafafa;
-  font-family: Neusa-Bold;
-  font-size: 1.5rem;
 }
 
 .navbar-logo {
-  color: #006E41
+  font-family: Neusa-Bold;
+  font-size: 1.25rem;
+  color: #006e41;
 }
 
-.navbar-logo:hover {
-  color: #009959;
-}
-
-.navbar-items li a {
+.nav-link, .nav-link.dropdown-toggle {
+  font-family: Neusa W00 SemiBold;
+  font-size: 1.25rem;
   color: #006E41;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #009959;
-}
-
-.dropdown-menu li a {
-  white-space: normal;
-}
-
 .dropdown-item {
-  font-family: Brutalista;
-  font-size: 16px;
+  font-family: Neusa Next Std Trial Wide Medium;
+  font-size: 1rem;
+  color: #006E41;
+}
+
+.navbar-logo:hover, .nav-link:hover, .nav-link:active, .nav-link.dropdown-toggle.show {
+  color: #009959;
 }
 
 .dropdown-item:hover {
   background-color: #006E41;
-  color: white;
+  color: #ffffff;
 }
 
 .navbar-toggler {
   border: none;
-  outline: none;
+  padding: 0px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23006E41' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 /* CARD STYLE */
@@ -149,10 +154,87 @@ html {
   color:#FFFFFF;
 }
 
+.green-footer {
+  font-family: Brutalista;
+  font-size: 12px;
+  color:#0e0e0e;
+}
+
+.green-footer a {
+  color:#0e0e0e;
+}
+
 footer a {
   color: white;
 }
 
 footer a:hover {
   color: #cccccc;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .navbar-logo, .nav-link, .nav-link.dropdown-toggle {
+    font-size: 1rem;
+  }
+  .dropdown-item {
+    font-size: 0.875rem;
+  }
+  .main-heading {
+    font-size: 2.5rem;
+  }
+  .green-heading, .white-heading {
+    font-size: 2rem;
+  }
+  .green-heading-2, .white-heading-2 {
+    font-size: 1.75rem;
+  }
+  .green-heading-3, .white-heading-3 {
+    font-size: 1.25rem;
+  }
+  .black-paragraph, .white-paragraph {
+    font-size: 0.875rem;
+  }
+  .white-button {
+    font-size: 1.25rem;
+  }
+  .white-button-2 {
+    font-size: 1rem;
+  }
+  .green-footer, .white-footer {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-logo, .nav-link, .nav-link.dropdown-toggle {
+    font-size: 0.875rem;
+  }
+  .dropdown-item {
+    font-size: 0.75rem;
+  }
+  .main-heading {
+    font-size: 2rem;
+  }
+  .green-heading, .white-heading {
+    font-size: 1.75rem;
+  }
+  .green-heading-2, .white-heading-2 {
+    font-size: 1.5rem;
+  }
+  .green-heading-3, .white-heading-3 {
+    font-size: 1rem;
+  }
+  .black-paragraph, .white-paragraph {
+    font-size: 0.75rem;
+  }
+  .white-button {
+    font-size: 1rem;
+  }
+  .white-button-2 {
+    font-size: 0.875rem;
+  }
+  .green-footer, .white-footer {
+    font-size: 8px;
+  }
 }
