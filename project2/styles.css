@@ -172,7 +172,7 @@ footer a:hover {
   color: #cccccc;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERY */
 @media (max-width: 768px) {
   .navbar-logo, .nav-link, .nav-link.dropdown-toggle {
     font-size: 1rem;
@@ -203,38 +203,5 @@ footer a:hover {
   }
   .green-footer, .white-footer {
     font-size: 10px;
-  }
-}
-
-@media (max-width: 576px) {
-  .navbar-logo, .nav-link, .nav-link.dropdown-toggle {
-    font-size: 0.875rem;
-  }
-  .dropdown-item {
-    font-size: 0.75rem;
-  }
-  .main-heading {
-    font-size: 2rem;
-  }
-  .green-heading, .white-heading {
-    font-size: 1.75rem;
-  }
-  .green-heading-2, .white-heading-2 {
-    font-size: 1.5rem;
-  }
-  .green-heading-3, .white-heading-3 {
-    font-size: 1rem;
-  }
-  .black-paragraph, .white-paragraph {
-    font-size: 0.75rem;
-  }
-  .white-button {
-    font-size: 1rem;
-  }
-  .white-button-2 {
-    font-size: 0.875rem;
-  }
-  .green-footer, .white-footer {
-    font-size: 8px;
   }
 }
