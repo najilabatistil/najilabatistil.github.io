@@ -66,7 +66,7 @@ video {
   transition: all 0.5s ease;
 }
 
-.video-button:hover {
+.video-button:hover, .video-button:active {
   background-color: white;
   color: black;
 }
@@ -88,7 +88,7 @@ p {
   transition: all 0.5s ease;
 }
 
-.more-btn:hover {
+.more-btn:hover,.more-btn:active {
   background-color: black;
   color: white;
 }
