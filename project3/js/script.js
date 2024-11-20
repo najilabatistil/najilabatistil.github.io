@@ -6,7 +6,7 @@ var others = ["Birdie", "Bouncer", "Fizz", "Gil", "Governor", "Grandpa", "Gunthe
 function createContent(array, containerName, folder, code) {
   for (var i = 0; i < array.length; i++) {
     var container = document.getElementById(containerName);
-    container.innerHTML += `<div class="col-6 col-sm-6 col-md-4 col-lg-3 mx-auto">
+    container.innerHTML += `<div class="col-6 col-sm-6 col-md-4 col-lg-3">
         <div class="card rounded-3 my-3 p-3 text-center" card-theme="light" id="`+ code + i + `" onmouseenter="addHover('` + code + i + `')" onmouseleave="removeHover('` + code + i + `')">
           <div class="img-container">
             <img src="img/`+ folder + `/` + array[i] + `.png" class="w-75">
