@@ -45,7 +45,7 @@ function createContent() {
     }
 
     container.innerHTML += `
-      <div class="row justify-content-center align-items-center py-5">
+      <div class="row justify-content-center align-items-center py-5 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
         <div class="col-10 col-lg-4 py-3` + order1 + `">
           <h1>` + device.name + `</h1>
           <p>` + device.description + `</p>
