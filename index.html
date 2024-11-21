@@ -1,88 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Najila's Projects</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    @font-face {
-      font-family: 'Mono45 Headline';
-      src: url('fonts/Mono45Headline-Regular.woff2') format('woff2'),
-        url('fonts/Mono45Headline-Regular.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    body {
-      background-color: #F8B49F;
-      font-family: 'Mono45 Headline';
-      color: #2D2C27;
-    }
-
-    .container {
-      max-width: 350px;
-    }
-
-    .main-title {
-      font-size: 3.75rem;
-      font-weight: bold;
-      color: #C96648;
-      text-shadow: 3px 3px 0px #fff, 6px 6px 0px #2D2C27;
-    }
-
-    .project-btn {
-      background-color: #fff5c4;
-      color: #333;
-      border: 2px solid #2D2C27;
-      font-size: 1.5rem;
-      padding: 15px;
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 4px 4px 0px #2D2C27;
-      display: block;
-    }
-
-    .project-btn:hover {
-      background-color: #fbdd96;
-      color: #2D2C27;
-      border-color: #fff;
-      box-shadow: 4px 4px 0px #2D2C27;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Najila Joanne | Portfolio</title>
+  <link rel="icon" href="assets/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://db.onlinewebfonts.com/c/ec11ddc9fa834d65ab94debb6af73080?family=Zing+Rust+Base" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md fixed-top justify-content-between align-items-center px-1">
+    <div class="container-xl">
+      <a class="navbar-brand p-0" href="./">
+        <img src="assets/img/logo.png" alt="Logo" width="25">
+      </a>
 
-  <div class="container text-center mt-5">
-    <!-- Header Section -->
-    <header class="mb-5">
-      <h1 class="main-title">My Projects</h1>
-    </header>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Project Buttons -->
-    <div class="row justify-content-center">
-      <div class="col-12 mb-3">
-        <a href="project1/" class="btn project-btn">Project 1</a>
+      <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-items navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-      <div class="col-12 mb-3">
-        <a href="project2/" class="btn project-btn">Project 2</a>
+
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <div class="container-fluid main-container p-0">
+    <div class="row">
+      <div class="banner-container">
+        <img src="assets/img/background.png" class="banner">
       </div>
-      <div class="col-12 mb-3">
-        <a href="project3/" class="btn project-btn">Project 3</a>
+    </div>
+    <div class="banner-display" style="position: fixed;">
+      <img src="assets/img/wordmark.png" width="600">
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="container-fluid container-stroke" id="about" style="background-color: #FEF375;">
+    <div class="row text-center pt-5 wow animate__animated animate__fadeIn">
+      <h1 class="display-4">About Me</h1>
+    </div>
+    <div class="row justify-content-center align-items-center pt-3 pb-5 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+      <div class="col-12 col-md-3 col-lg-2 order-2 order-md-1 text-center text-md-end"> 
+        <img src="assets/img/cat.png" width="150" class="img-fluid">
       </div>
-      <div class="col-12 mb-3">
-        <a href="project4/" class="btn project-btn">Project 4</a>
-      </div>
-      <div class="col-12 mb-3">
-        <a href="" class="btn project-btn">Project 5</a>
+      <div class="col-12 col-md-6 col-lg-5 order-1 order-md-2 text-center text-md-start">
+        <p class="px-3">
+          Hi! I'm Najila, a third-year IT student at the Polytechnic University of the Philippines - Sto. Tomas Campus.
+          <br><br>
+          I’m currently learning web development, using tools such as HTML, CSS, Bootstrap, and JavaScript to create responsive websites. I am also currently studying database administration, using PHP and MySQL to manage data efficiently.
+          <br><br>
+          Below are some of the projects I’ve worked on.
+        </p>
       </div>
     </div>
   </div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Projects -->
+  <div class="container-fluid container-stroke" id="projects" style="background-color: #ED566A;">
+    <div class="row text-center pt-5 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+      <h1 class="display-4">Projects</h1>
+    </div>
+    <div class="row justify-content-center pt-3 pb-5">
+      <div class="col-10">
+        <div class="row justify-content-center" id="projectContainer">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="container-fluid container-stroke" id="contact" style="background-color: #00C5F1;">
+    <div class="row text-center pt-5 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+      <h1 class="display-4">Contact</h1>
+    </div>
+    <div class="row text-center pt-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+      <ul class="nav justify-content-center pb-5 mb-4">
+        <li class="nav-item">
+          <a href="https://github.com/najilabatistil/" class="nav-link px-5">
+            <button class="btn contact-btn"><i class="bi bi-github h1"></i></button>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.facebook.com/NajilaBatistil/" class="nav-link px-5">
+            <button class="btn contact-btn"><i class="bi bi-facebook h1"></i></button>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.instagram.com/naaaaajiiii/" class="nav-link px-5">
+            <button class="btn contact-btn"><i class="bi bi-instagram h1"></i></button>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="mailto: najilabatistil1@gmail.com" class="nav-link px-5">
+            <button class="btn contact-btn"><i class="bi bi-envelope-at h1"></i></button>
+          </a>
+        </li>
+      </ul>
+      <p class="text-center text-muted mb-4 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">© 2024 Najila Joanne Batistil.</p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+    new WOW().init(); 
+  </script>
 </body>
 
 </html>
