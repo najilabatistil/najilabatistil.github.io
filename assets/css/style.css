@@ -98,9 +98,7 @@ html {
 
 h2 {
   font-family: 'Zing Rust Base';
-  color: white;
-  -webkit-text-stroke: 1px black;
-  text-shadow: 1.5px 3px 0px black;
+  color: black;
 }
 
 p {
