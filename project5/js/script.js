@@ -40,7 +40,7 @@ function createContent() {
 
       carouselItems += `
         <div class="carousel-item` + active  + `">
-          <img src="assets/img/` + device.folder + `/` + device.images[j] + `" class="d-block w-100" alt="...">
+          <img src="img/` + device.folder + `/` + device.images[j] + `" class="d-block w-100" alt="...">
         </div>`;
     }
 
