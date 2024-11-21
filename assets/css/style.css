@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Mono45 Headline';
+  src: url('../fonts/Mono45Headline-Regular.woff2') format('woff2'),
+    url('../fonts/Mono45Headline-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Scroll Padding */
 html {
   scroll-padding-top: 60px;
@@ -19,7 +27,7 @@ html {
 
 .nav-link {
   font-family: 'Mono45 Headline';
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   color: black; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
