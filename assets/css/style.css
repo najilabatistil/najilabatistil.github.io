@@ -1,11 +1,3 @@
-@font-face {
-  font-family: 'Mono45 Headline';
-  src: url('assets/fonts/Mono45Headline-Regular.woff2') format('woff2'),
-    url('assets/fonts/Mono45Headline-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* Scroll Padding */
 html {
   scroll-padding-top: 60px;
