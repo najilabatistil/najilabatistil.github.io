@@ -74,6 +74,7 @@ html {
   z-index: -999;
 }
 
+
 /* Content */
 .container-stroke {
   border-top: 2px solid black;
@@ -94,6 +95,7 @@ html {
 
 .card:hover {
   transform: scale(1.05);
+  box-shadow: 9px 9px 0px black;
 }
 
 h2 {
@@ -118,7 +120,8 @@ p {
 .page-btn:hover {
   background-color: #00cefd;
   border: 2px solid black;
-  transform: translateY(-5px);
+  box-shadow: 8px 8px 0px black;
+  transform: translate(-5px, -5px);
 }
 
 .contact-btn {
@@ -132,12 +135,42 @@ p {
   color: black;
   border: 2px solid black;
   background-color: #ecdf4e;
-  transform: translateY(-5px);
+  box-shadow: 8px 8px 0px black;
+  transform: translate(-5px, -5px);
 }
 
-/* MEDIA QUERY */
+/* 404 */
+.heading-404 {
+  font-family: 'Zing Rust Base';
+  font-size: 15.625rem;
+  line-height: 0.85;
+  color: #ED566A;
+  /* -webkit-text-stroke: 3px black; */
+  text-shadow: 3px 6px 0px #FEF375, 6px 12px 0px #00C5F1;
+}
+
+.sub-404 {
+  font-family: 'Mono45 Headline';
+  font-size: 4rem;
+  line-height: 1;
+}
+
+/* MEDIA QUERIES */
 @media (max-width: 600px) {
   p {
     font-size: 1rem;
   }
+}
+
+@media (max-width: 790px) {
+  .heading-404 {
+    font-size: 10rem;
+    line-height: 1;
+  }
+  
+  .sub-404 {
+    font-size: 2rem;
+    line-height: normal;
+  }
+  
 }
