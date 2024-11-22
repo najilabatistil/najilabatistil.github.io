@@ -28,6 +28,12 @@ var projects = [
     description: "A website featuring an embedded video of the Galaxy S24 Series.",
     thumbnail: "project5.png",
     link: "project5/"
+  },
+  {
+    title: "Project 6",
+    description: "A website implementing the parallax design.",
+    thumbnail: "project6.png",
+    link: "project6/"
   }
 ]
 
