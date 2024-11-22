@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://db.onlinewebfonts.com/c/9d02d04a50a90c980febd919f9b10fb2?family=WindsorEloD+V2" rel="stylesheet">
-  <link href="https://db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Display+Regular" rel="stylesheet">  
+  <link href="https://db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Display+Regular" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">  
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="parallax.css">
 	<title>A Little to the Left</title>
@@ -30,7 +31,7 @@
 	</section>
 
 	<section class="main-content" style="background-color: #F7EEE6">
-		<div class="container my-5 py-5">
+		<div class="container my-5 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s"">
       <div class="row justify-content-center align-items-center">
         <div class="col-10 col-lg-5">
           <h1 class="display-4">A Little to the Left</h1>
@@ -46,25 +47,36 @@
       </div>
     </div>
 
-    <div class="container my-5 py-5">
+    <div class="container my-5">
       <div class="row justify-content-center align-items-center">
         <div class="col-10 text-center">
-          <h1 class="display-4">Available On</h1>
+          <h1 class="display-4 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">Available On</h1>
         </div>
       </div>
-      <div class="row justify-content-center align-items-center my-3">
+      <div class="row justify-content-center align-items-center my-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
         <div class="col-6 col-md-2 text-center my-3">
-          <a href="https://store.steampowered.com/app/1629520/A_Little_to_the_Left/" target="_blank" class="btn"><img src="img/platforms/steam.png" height="75"></a>
+          <a href="https://store.steampowered.com/app/1629520/A_Little_to_the_Left/" target="_blank" class="btn"><img src="img/platforms/steam.png" class="img-fluid" height="75"></a>
         </div>
         <div class="col-6 col-md-2 text-center my-3">
-          <a href="https://www.nintendo.com/us/store/products/a-little-to-the-left-switch/" target="_blank" class="btn"><img src="img/platforms/nintendo-switch.png" height="75"></a>
+          <a href="https://www.nintendo.com/us/store/products/a-little-to-the-left-switch/" target="_blank" class="btn"><img src="img/platforms/nintendo-switch.png" class="img-fluid" height="75"></a>
         </div>
         <div class="col-6 col-md-2 text-center my-3">
-          <a href="https://www.xbox.com/en-US/games/store/a-little-to-the-left/9NLDDF97GTJ0" target="_blank" class="btn"><img src="img/platforms/xbox.png" height="75"></a>
+          <a href="https://www.xbox.com/en-US/games/store/a-little-to-the-left/9NLDDF97GTJ0" target="_blank" class="btn"><img src="img/platforms/xbox.png" class="img-fluid" height="75"></a>
         </div>
         <div class="col-6 col-md-2 text-center my-3">
-          <a href="https://store.playstation.com/en-ca/product/UP7076-PPSA17847_00-ALITTLETOTHELEFT" target="_blank" class="btn"><img src="img/platforms/ps.png" height="75"></a>
+          <a href="https://store.playstation.com/en-ca/product/UP7076-PPSA17847_00-ALITTLETOTHELEFT" target="_blank" class="btn"><img src="img/platforms/ps.png" class="img-fluid" height="75"></a>
         </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-10 text-center">
+          <h1 class="display-4 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">Gallery</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center my-3" id="galleryContainer">
+        
       </div>
     </div>
 	</section>
@@ -72,7 +84,12 @@
 	<!--Uses JQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/parallax.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script>
+    new WOW().init(); 
+  </script>
 </body>
 
 </html>
