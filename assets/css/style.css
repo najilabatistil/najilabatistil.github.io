@@ -143,6 +143,10 @@ p {
   transform: scale(0.970);
 }
 
+.wow {
+  animation-duration: 0.75s;
+}
+
 /* 404 */
 .heading-404 {
   font-family: 'Zing Rust Base';
