@@ -28,8 +28,8 @@ var devices = [
 function createContent() {
   for (var i = 0; i < devices.length; i++) {
     var device = devices[i];
-    var order1 = (device.name == "Galaxy S24+ | S24") ? " order-1 order-lg-2" : " ";
-    var order2 = (device.name == "Galaxy S24+ | S24") ? " order-2 order-lg-1" : " ";
+    var order1 = (i % 2 != 0) ? " order-1 order-lg-2" : " ";
+    var order2 = (i % 2 != 0) ? " order-2 order-lg-1" : " ";
 
     var container = document.getElementById("contentContainer");
 
