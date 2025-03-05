@@ -84,12 +84,12 @@ p {
   font-size: 1.075rem;
 }
 
-.feature-black {
+.feature-black-bg {
   background-color: black;
   color: white;
 }
 
-.feature-white {
+.feature-white-bg {
   background-color: white;
   color: black;
 }
