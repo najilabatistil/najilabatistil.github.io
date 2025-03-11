@@ -2,6 +2,7 @@ var projects = [
   {
     name: "Web Development",
     description: "My projects under the Web Development course during the first semester of my third year in university.",
+    languages: "HTML, CSS, JavaScript, PHP",
     image: "webdev.png",
     alt: "Code icon",
     link: "webdev/"
@@ -9,6 +10,7 @@ var projects = [
   {
     name: "Applications Development and Emerging Technologies",
     description: "My projects under the Applications Development and Emerging Technologies course during the second semester of my third year in university.",
+    languages: "-",
     image: "appdev.png",
     alt: "Smartphone icon",
     link: "appdev/"
@@ -37,6 +39,7 @@ function createProjectCard() {
               <div class="card-body px-0 my-auto">
                 <h4>`+ project.name +`</h2>
                 <p>`+ project.description +`</p>
+                <p><u>Languages used</u>: <br>`+ project.languages +`</p>
                 <a href="`+ project.link +`" target="_blank" class="btn custom-btn w-100 mb-2">
                   View <i class="bi bi-box-arrow-up-right"></i></a>
               </div>

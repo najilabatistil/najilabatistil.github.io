@@ -122,7 +122,7 @@ function createSkillCards() {
             </div>
 
             <!-- Body -->
-            <div class="card-body d-flex flex-column align-items-center text-center pt-2 px-2 pb-0 my-auto">
+            <div class="card-body d-flex flex-column align-items-center text-center pt-2 px-0 pb-0 my-auto">
                 <h4 class="card-title">`+ skill.cards[j].name + `</h2>
                 <p class="card-text">`+ createStars(skill.cards[j].rating) + `</p>
             </div>
@@ -133,7 +133,7 @@ function createSkillCards() {
 
     skillsContainer.innerHTML +=
       `
-      <div class="row d-flex justify-content-center justify-content-md-start px-3 pb-2">
+      <div class="row pb-2">
         <div class="col-12 p-0">
           <h2 class="text-center text-md-start">`+ skill.category + `</h2>
         </div>
