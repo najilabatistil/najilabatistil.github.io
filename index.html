@@ -5,19 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Najila Joanne | Home</title>
-  <link rel="icon" href="assets/img/logo.png">
+  <link rel="icon" href="homepage/assets/img/logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://db.onlinewebfonts.com/c/ec11ddc9fa834d65ab94debb6af73080?family=Zing+Rust+Base" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="homepage/assets/css/style.css">
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-md fixed-top justify-content-between align-items-center px-1">
+  <nav class="navbar navbar-expand-sm fixed-top justify-content-between align-items-center px-1">
     <div class="container">
       <a class="navbar-brand p-0" href="./">
-        <img src="assets/img/logo.png" alt="Logo" width="30">
+        <img src="homepage/assets/img/logo.png" alt="Logo" width="30">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
@@ -34,8 +34,17 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#skills">Skills</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#projects">Projects</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="appdev/">Applications Development</a></li>
+              <li><a class="dropdown-item" href="webdev/">Web Development</a></li>
+              <li><a class="dropdown-item" href="others/da/">Database Administration</a></li>
+              <li><a class="dropdown-item" href="others/ipt/">IPT</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -44,15 +53,15 @@
   </nav>
 
   <!-- Background -->
-  <img src="assets/img/background.png" class="background">
+  <img src="homepage/assets/img/background.png" class="background">
 
   <!-- Landing -->
   <div class="container-fluid main-container mt-3">
     <div class="row d-flex justify-content-center align-items-center">
       <!-- Display -->
       <div class="col">
-        <img src="assets/img/wordmark-bg.png" class="display-background">
-        <img src="assets/img/wordmark-text.png" class="display-text">
+        <img src="homepage/assets/img/wordmark-bg.png" class="display-background">
+        <img src="homepage/assets/img/wordmark-text.png" class="display-text">
       </div>
       <!-- Button -->
       <div class="col display-button d-flex justify-content-center">
@@ -68,7 +77,7 @@
     <div class="row d-flex justify-content-center align-items-center px-3">
       <!-- Image -->
       <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center"> 
-        <img src="assets/img/profile.png" class="profile-img">
+        <img src="homepage/assets/img/profile.png" class="profile-img">
       </div>
 
       <div class="col-12 col-md-6 col-lg-5">
@@ -132,7 +141,7 @@
 
   <!-- Footer -->
   <div class="container-fluid text-center mt-4 py-4" style="background-color: var(--blue); border-top: 2px solid black">
-    <img src="assets/img/logo.png" alt="Logo" width="30" class="pb-1">
+    <img src="homepage/assets/img/logo.png" alt="Logo" width="30" class="pb-1">
     <h5>© 2024 Najila Joanne Batistil.</h5>
 
     <!-- Links -->
@@ -161,7 +170,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="assets/js/skills.js"></script>
-  <script src="assets/js/projects.js"></script>
+  <script src="homepage/assets/js/skills.js"></script>
+  <script src="homepage/assets/js/projects.js"></script>
 
 </html>

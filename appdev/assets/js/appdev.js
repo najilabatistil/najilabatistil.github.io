@@ -37,7 +37,7 @@ function createProjectCard() {
                     Visit <i class="bi bi-box-arrow-up-right"></i>
                   </a>
                   <a href="https://github.com/najilabatistil/najilabatistil.github.io/tree/main/appdev/` + project.link + `" target="_blank" class="btn custom-btn">
-                    View Code
+                    View Code on Github <i class="bi bi-github"></i>
                   </a>
                 </div>
               </div>

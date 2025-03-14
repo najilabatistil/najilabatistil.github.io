@@ -1,0 +1,55 @@
+
+.heading-404 {
+  font-family: 'Zing Rust Base';
+  font-size: 15.625rem;
+  line-height: 0.85;
+  color: white;
+  -webkit-text-stroke: 3px black; 
+  text-shadow: 3px 6px 0px black;
+}
+
+.sub {
+  font-family: 'Mono45 Headline';
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.display-container {
+  height: 100vh;
+  position: relative;
+}
+
+.center-display {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  box-shadow: 6px 6px 0px black;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 790px) {
+  .heading-404 {
+    font-size: 10rem;
+    line-height: 1;
+  }
+  
+  .sub {
+    font-size: 1.75rem;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 450px) {
+  .heading-404 {
+    font-size: 6.5rem;
+    line-height: 1;
+    text-shadow: 2px 5px 0px black;
+  }
+  
+  .sub {
+    font-size: 1.2rem;
+    line-height: normal;
+  }
+}
