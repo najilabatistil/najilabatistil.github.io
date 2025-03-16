@@ -19,13 +19,6 @@ var projects = [
     image: "da.png",
     alt: "Icon of a database",
     link: "others/da/"
-  },
-  {
-    name: "Integrative Programming and Technologies",
-    languages: "Java (with Swing GUI)",
-    image: "ipt.png",
-    alt: "Icon of an application",
-    link: "others/ipt/"
   }
 ]
 
