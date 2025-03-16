@@ -5,27 +5,27 @@ var skills = [
       {
         name: "PHP",
         image: "php.png",
-        rating: 4
+        rating: 3.5
       },
       {
         name: "SQL",
         image: "sql.png",
-        rating: 4
+        rating: 3.5
       },
       {
         name: "JavaScript",
         image: "javascript.png",
-        rating: 3.5
+        rating: 3
       },
       {
         name: "Java",
         image: "java.png",
-        rating: 3
+        rating: 2.5
       },
       {
         name: "Python",
         image: "python.png",
-        rating: 2.5
+        rating: 2
       }
     ]
   },
@@ -75,12 +75,12 @@ var skills = [
       {
         name: "Figma",
         image: "figma.png",
-        rating: 3.5
+        rating: 3
       },
       {
         name: "Photoshop",
         image: "photoshop.png",
-        rating: 3
+        rating: 2.5
       }
     ]
   }
