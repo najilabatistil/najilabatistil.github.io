@@ -123,6 +123,10 @@ ul {
   background-color: var(--blue);
 }
 
+.dropdown-menu {
+  border: 2px solid black !important;
+}
+
 .navbar-toggler {
   border: 0; 
   padding: 0px;
@@ -251,6 +255,11 @@ ul {
 
   .profile-img {
     width: 75%;
+  }
+
+  .project-img {
+    width: 75%;
+    height: auto;
   }
 }
 
