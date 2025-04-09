@@ -4,21 +4,14 @@ var projects = [
     languages: "-",
     image: "appdev.png",
     alt: "Icon of a smartphone",
-    link: "appdev/"
+    link: "ADET/"
   },
   {
     name: "Web Development",
     languages: "HTML, CSS, JavaScript, PHP, SQL",
     image: "webdev.png",
     alt: "Icon of brackets",
-    link: "webdev/"
-  },
-  {
-    name: "Database Administration",
-    languages: "HTML, CSS, PHP, SQL",
-    image: "da.png",
-    alt: "Icon of a database",
-    link: "others/da/"
+    link: "WD/"
   }
 ]
 

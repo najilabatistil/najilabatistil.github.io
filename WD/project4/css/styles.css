@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'Fredoka SemiBold';
+  src: url('../fonts/Fredoka-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HelvetiHand';
+  src: url('../fonts/HelvetiHand.ttf') format('truetype');
+}
+
+body {
+  background-color: #FAF0E6;
+}
+
+h1 {
+  font-family: 'Fredoka SemiBold';
+  color: #0B0A02;
+}
+
+h3 {
+  font-family: 'Fredoka SemiBold';
+  color: #0B0A02;
+}
+
+h4 {
+  font-family: 'Fredoka SemiBold';
+  color: #0B0A02;
+}
+
+p {
+  font-family: 'HelvetiHand';
+  font-size: 1.125rem;
+  color: #0B0A02;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #FFFFFF;
+  border-bottom: 3px solid #544A45;
+  top: 7px
+}
+
+.navbar-toggler {
+  background-color: #FFFFFF;
+  border: 3px solid #544A45;
+}
+
+.nav-btn {
+  font-family: 'Fredoka Semibold';
+  font-size: 1rem;
+  color:#0B0A02;
+  background-color: #FFD278;
+  border: 3px solid #0B0A02;
+  border-radius: 30px;
+  width: 90px;
+}
+
+.nav-btn:hover, .nav-btn:focus, .nav-btn:active {
+  background-color: #f2b948;
+  border: 3px solid #0B0A02;
+  transform: scale(1.1);
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* LOADING BAR */
+.loadingBarContainer {
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+}
+
+.loadingBar{
+  background-color: #FB993A;
+  width: 0%;
+  max-width: 100%;
+  height: 7px;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #DABA7D;
+  font-family: 'HelvetiHand';
+  font-size: 1rem;
+  color:#0B0A02;
+  text-align: center;
+  border-top: 3px solid #544A45;
+}
+
+.footer a {
+  color:#0B0A02;
+}
+
+/* HOME PAGE BUTTONS*/
+.index-btn {
+  font-family: 'Fredoka SemiBold';
+  font-size: 1.25rem;
+  color: #0B0A02;
+  background-color: #FFD278;
+  border: 3px solid #0B0A02;
+  border-radius: 15px;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.index-btn:hover, .index-btn:focus, .index-btn:active {
+  background-color: #f2b948;
+  border: 3px solid #0B0A02;
+  transform: scale(1.1);
+}
+
+/* CAT CARD */
+.cat-card {
+  background-color: #FFD278;
+  border: 4px solid #0B0A02;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.cat-card:hover, .cat-card:focus, .cat-card:active {
+  background-color: #f2b948;
+  box-shadow: 0px 3px 4px gray;
+  transform: scale(1.075);
+}
+
+.card-header {
+  font-family: 'Fredoka SemiBold';
+  color: #0B0A02;
+  border-bottom: 4px solid #0B0A02;
+}
+
+.cat-name {
+  font-family: 'Fredoka SemiBold';
+  font-size: 1.5rem;
+  color: #0B0A02;
+}
+
+.img-container {
+  background-color: #FFFFFF;
+}
+
+/* PAGINATION BUTTONS */
+.page-link {
+  font-family: 'Fredoka SemiBold';
+  color: #0B0A02;
+  background-color: #FFD278;
+  border: 3px solid #0B0A02;
+}
+
+.page-link:hover, .page-link:focus, .page-link:active {
+  color: #0B0A02;
+  background-color: #f2b948;
+  border: 3px solid #0B0A02;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.unclickable-link {
+  cursor: not-allowed;
+}
+
+.page-item:not(:first-child) {
+  margin-left: -1px;
+}
+
+/* VIEW PAGE */
+.view-img {
+  background-color: #FFFFFF;
+  border: 5px solid #544A45;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.info-card {
+  background-color: #FFD278;
+  border: 4px solid #0B0A02;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.table td {
+  font-family: 'HelvetiHand';
+  font-size: 1rem;
+  color: #0B0A02;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.table td:first-child {
+  background-color: #fdf0c3;
+}
+
+/* SEARCH PAGE */
+.form-control {
+  font-family: 'HelvetiHand';
+  font-size: 1rem;
+  border: 3px solid #544A45;
+}

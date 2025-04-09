@@ -1,0 +1,17 @@
+/*PUT YOUR CUSTOM STYLE HERE*/
+
+/*!This style is important, do not override!*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.display-4 {
+  font-family: 'WindsorEloD V2';
+  color: #343F48;
+}
+
+p {
+  font-family: 'SF Pro Display Regular';
+  color: #343F48;
+}
