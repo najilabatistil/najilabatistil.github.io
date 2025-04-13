@@ -1,5 +1,5 @@
 <nav class="container-fluid main-nav sticky-top">
-  <div class="row d-flex flex-row justify-content-center align-items-center px-sm-3 pt-3 pb-2">
+  <div class="row d-flex flex-row justify-content-center align-items-center px-sm-3 p-2">
     <!-- Logo -->
     <div class="col-12 col-lg-auto order-1 d-flex justify-content-center justify-content-lg-start">
       <a class="navbar-brand" href="./">the strokes</a>

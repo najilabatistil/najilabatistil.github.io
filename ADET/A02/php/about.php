@@ -8,7 +8,7 @@
     </div>
 
     <!-- Image -->
-    <div class="col-12 mt-2">
+    <div class="col-12 mt-4">
       <img src="img/band.jpeg" class="img-fluid" alt="Image of The Strokes" style="max-width: 75%; border-radius: 10px">
     </div>
 
