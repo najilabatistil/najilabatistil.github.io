@@ -1,0 +1,159 @@
+/* GENERAL */
+@import url(https://db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold); 
+@import url(https://db.onlinewebfonts.com/c/efb328afbc0517fdab4b59d2823e2e2c?family=MADEOuterSans); 
+@import url(https://db.onlinewebfonts.com/c/fe02bfc5f3b1c47a45f3167457958cbe?family=Nuckle);
+
+:root {
+  --white: #DDDBCE;
+  --black: #212121;
+
+  --heading: 'Druk Wide Bold';
+  --subheading: 'MADEOuterSans';
+  --text: 'Nuckle';
+
+  --heading-size: 1.75rem;
+  --subheading-size: 1.25rem;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.heading {
+  font-family: var(--heading);
+  font-size: var(--heading-size);
+}
+
+.subheading {
+  font-family: var(--subheading);
+  font-size: var(--subheading-size);
+}
+
+p {
+  font-family: var(--text);
+}
+
+.btn {
+  --bs-btn-font-family: var(--subheading);
+  --bs-btn-font-size: var(--subheading-size);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--white);
+  --bs-btn-border-color: var(--white);
+  --bs-btn-hover-color: var(--black);
+  --bs-btn-hover-bg: var(--white);
+  --bs-btn-hover-border-color: var(--white);
+  --bs-btn-active-bg: var(--white);
+  --bs-btn-active-border-color: var(--white);
+  --bs-btn-active-color: var(--black);
+}
+
+
+/* NAVBAR */
+.main-nav {
+  background-color: var(--black);
+  border-bottom: 1px solid var(--white);
+}
+
+.navbar-brand {
+  font-family: var(--heading);
+  font-size: var(--heading-size);
+  color: var(--white);
+}
+
+.nav-link {
+  font-family: var(--subheading);
+  font-size: var(--subheading-size);
+  color: var(--white);
+  transition: text-decoration 0.2s ease;
+  padding: 0;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-link.outlined {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--white); 
+  border-radius: 50px;
+  padding: 4px 10px;
+}
+
+.nav-link.social {
+  transition: all 0.3s ease,
+}
+
+.nav-link.social:hover,  .nav-link.social:active {
+  transform: scale(1.2);
+  filter: brightness(75%);
+}
+
+li::marker {
+  content: none;
+}
+
+
+/* CONTENT */
+.home-container {
+  height: 75vh;
+}
+
+.img-container {
+  position: relative;
+  transition: all 0.8s ease;
+}
+
+.img-hover {
+  color: var(--white);
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.8s ease;	
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+  :root {
+    --heading-size: 1.5rem;
+    --subheading-size: 1rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (pointer:fine) {
+  .img-label {
+    display: none;
+  }
+
+  .img-container:hover img {
+    transform: scale(1.015);
+    filter: brightness(45%);
+  }
+  
+  .img-container:hover .img-hover {
+    opacity: 1;
+  }
+}
+
+@media (pointer:coarse) {
+  .img-label {
+    display: block;
+  }
+
+  .img-hover {
+    pointer-events: none;
+    opacity: 0;
+  }
+}

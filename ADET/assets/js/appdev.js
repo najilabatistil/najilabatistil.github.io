@@ -1,8 +1,8 @@
 var projects = [
   {
-    title: "Activity 1",
-    description: "A one-index PHP website utilizing the MVC architecture, using a URL GET variable to switch between contents/pages.",
-    thumbnail: "soon.png",
+    title: "Activity 2",
+    description: "A one-index PHP website about the band 'The Strokes,' utilizing the MVC architecture and a URL GET variable to switch between contents/pages.",
+    thumbnail: "A02.png",
     link: "A02"
   }
 ]
