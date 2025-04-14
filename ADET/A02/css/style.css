@@ -165,7 +165,7 @@ li::marker {
   }
 }
 
-@media (pointer: coarse) and (max-width: 768px) {
+@media (pointer: coarse) and (max-width: 992px) {
   .main-nav {
     padding-top: 25px;
     padding-bottom: 5px;
