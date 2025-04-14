@@ -49,7 +49,7 @@ function createAlbumsContent() {
         <div class="img-container">
           <img src="img/albums/` + album.image + `" class="img-fluid" alt="Album cover of` + album.name + `">
 
-          <!-- Text Hover -->
+          <!-- Image Hover -->
           <span class="img-hover">
             <h4 class="subheading mx-3">` + album.name + `</h4>
 

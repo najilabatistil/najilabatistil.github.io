@@ -34,11 +34,11 @@ function createMembersContent() {
     container.innerHTML += 
     `
       <div class="col-6 col-md-4 text-center p-2 p-sm-3">
+      <!-- Image -->
         <div class="img-container">
-          <!-- Image -->
           <img src="img/members/` + member.image + `" class="img-fluid" alt="Image of ` + member.name + `">
 
-          <!-- Text Hover -->
+          <!-- Image Hover -->
           <span class="img-hover">
             <h4 class="subheading mx-3 mb-0">
               ` + member.name + `

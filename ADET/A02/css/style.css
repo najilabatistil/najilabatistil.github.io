@@ -90,8 +90,6 @@ p {
 }
 
 .nav-link.social:hover,  .nav-link.social:active {
-  /* transform: scale(1.2); */
-  /* filter: brightness(75%); */
   background-color: var(--white);
   color: var(--black);
   border-radius: 50px;
