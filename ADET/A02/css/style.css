@@ -37,6 +37,7 @@ p {
 .btn {
   --bs-btn-font-family: var(--subheading);
   --bs-btn-font-size: var(--subheading-size);
+  --bs-btn-border-radius: 50px;
 }
 
 .btn-outline-primary {
@@ -48,6 +49,7 @@ p {
   --bs-btn-active-bg: var(--white);
   --bs-btn-active-border-color: var(--white);
   --bs-btn-active-color: var(--black);
+  transition: all 0.3s ease;
 }
 
 
@@ -67,7 +69,7 @@ p {
   font-family: var(--subheading);
   font-size: var(--subheading-size);
   color: var(--white);
-  transition: text-decoration 0.2s ease;
+  transition: text-decoration 0.5s ease;
   padding: 0;
 }
 
@@ -84,12 +86,15 @@ p {
 }
 
 .nav-link.social {
-  transition: all 0.3s ease,
+  transition: all 0.3s ease;
 }
 
 .nav-link.social:hover,  .nav-link.social:active {
-  transform: scale(1.2);
-  filter: brightness(75%);
+  /* transform: scale(1.2); */
+  /* filter: brightness(75%); */
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 50px;
 }
 
 li::marker {
@@ -148,6 +153,15 @@ li::marker {
 }
 
 @media (pointer:coarse) {
+  .main-nav {
+    padding-top: 25px;
+    padding-bottom: 5px;
+  }
+  
+  .heading {
+    margin: 35px 0px;
+  }
+  
   .img-label {
     display: block;
   }

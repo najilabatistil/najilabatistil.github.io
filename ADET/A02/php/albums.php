@@ -13,15 +13,15 @@
   </div>
 
   <!-- Buttons -->
-  <div class="col-12 mb-4">
+  <div class="col-12 mb-5">
     <div class="row d-flex justify-content-center">
       <div class="col-12 col-md-auto text-center">
-        <a href="?page=about" class="btn btn-outline-primary rounded-pill my-1">
+        <a href="?page=about" class="btn btn-outline-primary my-1">
           about the band →
         </a>
       </div>
       <div class="col-12 col-md-auto text-center">
-        <a href="?page=members" class="btn btn-outline-primary rounded-pill my-1">
+        <a href="?page=members" class="btn btn-outline-primary my-1">
           meet the members →
         </a>
       </div>

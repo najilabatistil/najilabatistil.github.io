@@ -8,7 +8,7 @@
     </div>
 
     <!-- Image -->
-    <div class="col-12 mt-4">
+    <div class="col-12 pt-3">
       <img src="img/band.jpeg" class="img-fluid" alt="Image of The Strokes" style="max-width: 75%; border-radius: 10px">
     </div>
 
@@ -26,15 +26,15 @@
   </div>
 
   <!-- Buttons -->
-  <div class="col-12 mb-4">
+  <div class="col-12 mb-5">
     <div class="row d-flex justify-content-center">
       <div class="col-12 col-md-auto text-center">
-        <a href="?page=members" class="btn btn-outline-primary rounded-pill my-1">
+        <a href="?page=members" class="btn btn-outline-primary my-1">
           meet the members →
         </a>
       </div>
       <div class="col-12 col-md-auto text-center">
-        <a href="?page=albums" class="btn btn-outline-primary rounded-pill my-1">
+        <a href="?page=albums" class="btn btn-outline-primary my-1">
           browse their albums →
         </a>
       </div>
