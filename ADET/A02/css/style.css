@@ -151,11 +151,6 @@ li::marker {
 }
 
 @media (pointer:coarse) {
-  .main-nav {
-    padding-top: 25px;
-    padding-bottom: 5px;
-  }
-  
   .heading {
     margin: 35px 0px;
   }
@@ -167,5 +162,12 @@ li::marker {
   .img-hover {
     pointer-events: none;
     opacity: 0;
+  }
+}
+
+@media (pointer: coarse) and (max-width: 768px) {
+  .main-nav {
+    padding-top: 25px;
+    padding-bottom: 5px;
   }
 }
