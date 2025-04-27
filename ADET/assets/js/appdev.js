@@ -8,7 +8,7 @@ var projects = [
   }, 
   {
     title: "Activity 3",
-    description: "A website showcasing the original Apple Macintosh using a bento layout built with Bootstrap.",
+    description: "A website showcasing the original Apple Macintosh, using a bento layout built with Bootstrap.",
     thumbnail: "A03.png",
     link: "A03",
     github: "A03"

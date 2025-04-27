@@ -39,7 +39,7 @@ function createImages() {
     `
       <div class="col-6 col-sm-6 ` + image.colSize + ` my-2">
         <div class="card clickable">
-          <img src="img/gallery/` + image.name + `.png" class="img-fluid my-auto" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/brochures/` + image.name + `.png')">
+          <img src="img/gallery/` + image.name + `.png" class="img-fluid my-auto" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/gallery/` + image.name + `.png')">
         </div>
       </div>
     `
