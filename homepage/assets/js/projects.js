@@ -1,7 +1,7 @@
 var projects = [
   {
     name: "Applications Development and Emerging Technologies",
-    languages: "-",
+    languages: "HTML, CSS, JavaScript, PHP",
     image: "appdev.png",
     alt: "Icon of a smartphone",
     link: "ADET/"

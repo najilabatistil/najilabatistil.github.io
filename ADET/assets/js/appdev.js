@@ -3,7 +3,15 @@ var projects = [
     title: "Activity 2",
     description: "A one-index PHP website about the band 'The Strokes,' utilizing the MVC architecture and a URL GET variable to switch between contents/pages.",
     thumbnail: "A02.png",
-    link: "A02"
+    link: "n/a",
+    github: "A02"
+  }, 
+  {
+    title: "Activity 3",
+    description: "A website showcasing the original Apple Macintosh using a bento layout built with Bootstrap.",
+    thumbnail: "A03.png",
+    link: "A03",
+    github: "A03"
   }
 ]
 
@@ -11,6 +19,8 @@ function createProjectCard() {
   for (var i = 0; i < projects.length; i++) {
     var project = projects[i];
     var container = document.getElementById("projectsContainer");
+
+    var btnVisibility = (project.link == "n/a") ? "d-none" : "";
 
     container.innerHTML += 
     `
@@ -33,7 +43,10 @@ function createProjectCard() {
                 </div>
                 
                 <div class="row mt-auto w-100">
-                  <a href="https://github.com/najilabatistil/najilabatistil.github.io/tree/main/ADET/` + project.link + `" target="_blank" class="btn custom-btn">
+                  <a href="` + project.link + `" target="_blank" class="btn custom-btn mb-2 `+ btnVisibility +`">
+                    Visit <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                  <a href="https://github.com/najilabatistil/najilabatistil.github.io/tree/main/ADET/` + project.github + `" target="_blank" class="btn custom-btn">
                     View Code on Github <i class="bi bi-github"></i>
                   </a>
                 </div>
