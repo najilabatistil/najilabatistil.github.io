@@ -1,8 +1,3 @@
-function openModal(imagePath) {
-  const modalImage = document.getElementById('modalImage');
-  modalImage.src = imagePath;
-}
-
 var images = [
   {
     name: "01",
@@ -44,6 +39,11 @@ function createImages() {
       </div>
     `
   }
+}
+
+function openModal(imagePath) {
+  const modalImage = document.getElementById('modalImage');
+  modalImage.src = imagePath;
 }
 
 createImages();
