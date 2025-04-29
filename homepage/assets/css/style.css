@@ -187,7 +187,6 @@ ul {
   width: 100%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  object-fit: contain;
 }
 
 .skill-img {
