@@ -12,6 +12,13 @@ var projects = [
     thumbnail: "A03.png",
     link: "A03",
     github: "A03"
+  },
+  {
+    title: "Activity 4",
+    description: "A one-page POS System web application with content loaded dynamically using JavaScript.",
+    thumbnail: "A04.png",
+    link: "A04",
+    github: "A04"
   }
 ]
 
