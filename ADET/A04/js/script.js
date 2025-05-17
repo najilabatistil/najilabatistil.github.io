@@ -1,15 +1,67 @@
 var productsContainer = document.getElementById("productsContainer");
 var receiptContainer = document.getElementById("receiptContainer");
+var categories = [];
+var products = [];
+var categoryProducts = [];
 var receiptList = [];
 
+// Fetch Data
+const getAllCategories = async () => {
+  fetch(
+    'http://localhost/najilabatistil.github.io/ADET/A06/categories.php'
+  )
+    .then(response => response.json())
+    .then(data => {
+      categories = data;
+      loadCategories();
+    });
+}
+
+const getAllProducts = async () => {
+  productsContainer.innerHTML = "";
+
+  fetch(
+    'http://localhost/najilabatistil.github.io/ADET/A06/products.php'
+  )
+    .then(response => response.json())
+    .then(data => {
+      products = data;
+      loadAllProducts();
+    });
+}
+
+const getProducts = async (categoryID) => {
+  const categoryData = {
+    categoryID: categoryID
+  };
+
+  productsContainer.innerHTML = "";
+
+  fetch(
+    'http://localhost/najilabatistil.github.io/ADET/A06/products.php', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(categoryData)
+  })
+    .then(response => response.json())
+    .then(data => {
+      categoryProducts = data;
+      loadProducts(categoryID);
+    });
+}
+
+
+// Category Functions
 function loadCategories(){
   var categoriesContainer = document.getElementById("categoriesContainer");
 
-  products.forEach((product, index) => {
+  categories.forEach((category) => {
     categoriesContainer.innerHTML += `
-      <div class="card category-button mx-1 p-3" onclick="loadProducts('`+ index +`'); setActive(this);">
-        <img src="img/icons/`+ product.image +`" class="icon-img">
-        <h5 class="regular-text mt-1 mb-0">`+ product.category +`</h5>
+      <div class="card category-button mx-1 p-3" onclick="getProducts('`+ category.categoryID +`'); setActive(this);">
+        <img src="img/icons/`+ category.image +`" class="icon-img">
+        <h5 class="regular-text mt-1 mb-0">`+ category.name +`</h5>
       </div>
     `;
   });
@@ -25,38 +77,37 @@ function setActive(clickedButton) {
   clickedButton.classList.add("active");
 }
 
+
+// Products Functions
 function loadAllProducts() {
   productsContainer.innerHTML = "";
 
   products.forEach(product => {
-    var folder = product.category.toLowerCase();
-
-    product.items.forEach(item => {
-      productsContainer.innerHTML += createProductCard(folder, item);
-    });
+    productsContainer.innerHTML += createProductCard(product);
   });
 }
 
-function loadProducts(categoryIndex) {
+function loadProducts(categoryID) {
   productsContainer.innerHTML = "";
-  var folder = products[categoryIndex].category.toLowerCase();
 
-  products[categoryIndex].items.forEach(item => {
-    productsContainer.innerHTML += createProductCard(folder, item);
+  categoryProducts.forEach(product => {
+    productsContainer.innerHTML += createProductCard(product);
   });
 }
 
-function createProductCard(folder, item) {
-  var status = (item.isAvailable) ? '' : 'unavailable';
+
+// Create Elements
+function createProductCard(product) {
+  var status = (product.isAvailable == "true") ? '' : 'unavailable';
 
   return `
   <div class="col-6 col-md-4 col-lg-3 my-2">
     <div class="card product `+ status +` h-100">
-      <img src="img/`+ folder +`/`+ item.image +`" class="card-img-top">
+      <img src="img/`+ product.image +`" class="card-img-top" alt="`+ product.name +`">
       <div class="card-body d-flex flex-column text-center">
-        <h6 class="card-title regular-text">`+ item.name +`</h6>
+        <h6 class="card-title regular-text">`+ product.name +`</h6>
         <div class="mt-auto">
-        `+ createButtons(item) +`
+        `+ createButtons(product) +`
         <div>
       </div>
     </div>
@@ -64,24 +115,24 @@ function createProductCard(folder, item) {
   `
 }
 
-function createButtons(item) {
+function createButtons(product) {
   var buttons = "";
 
-  if (!item.isAvailable) {
+  if (product.isAvailable == "false") {
     buttons = `
       <p class="text-danger">Unavailable.</p>
     `;
-  } else if (item.sizes) {
-    item.sizes.forEach(size => {
+  } else if (product.sizes.length != 0) {
+    product.sizes.forEach(size => {
       buttons += `
-        <button type="button" class="btn btn-dark regular-text h6" onclick="addToReceipt(`+ size.price +`, '`+ item.code + '-' + size.code +`')">
+        <button type="button" class="btn btn-dark regular-text h6" onclick="addToReceipt(`+ size.price +`, '`+ product.code + '-' + size.code +`')">
           `+ size.code +`
         </button>
       `;
     });
   } else {
     buttons = `
-      <button type="button" class="btn btn-dark regular-text" onclick="addToReceipt('`+ item.price +`', '`+ item.code +`')">
+      <button type="button" class="btn btn-dark regular-text" onclick="addToReceipt('`+ product.price +`', '`+ product.code +`')">
         Add
       </button>
     `;
@@ -133,13 +184,15 @@ function createReceiptItem(price, code) {
   `;
 }
 
+
+// Receipt Functions
 function addToReceipt(price, code) {
   var itemExist = document.getElementById(code);
 
   if (itemExist) {
     addQty(code);
   } else {
-    isEmpty(false);
+    showEmpty(false);
     receiptList.push({"code": code, "price": price, "qty": 1});
     receiptContainer.insertAdjacentHTML("beforeend", createReceiptItem(price, code));
     addTotal();
@@ -158,7 +211,7 @@ function removeFromReceipt(code) {
   item.remove();
 
   if (receiptList.length == 0) {
-    isEmpty(true);
+    showEmpty(true);
   }
 }
 
@@ -209,11 +262,11 @@ function addTotal() {
   totalContainer.innerHTML = total.toFixed(2);
 }
 
-function isEmpty(hasNoItems) {
+function showEmpty(hasNoItems) {
   var emptyMessage = document.getElementById("emptyMessage");
   emptyMessage.style.display = (hasNoItems) ? "block" : "none";
 }
 
-loadCategories();
-loadAllProducts();
-isEmpty(true);
+getAllCategories();
+getAllProducts();
+showEmpty(true);
