@@ -150,6 +150,7 @@ p {
 @media (max-width: 992px), (min-height: 900px) {
   .top-section {
     height: auto;
+    margin-top: 10px;
   }
 
   .category-button {
@@ -157,12 +158,11 @@ p {
   }
 
   .products-section {
-    max-height: 55dvh;
+    max-height: 75dvh;
   }
 
   .card.receipt {
     height: auto;
-    max-height: 350px;
     margin-top: 10px;
   }
 }
