@@ -7,7 +7,7 @@ function loadCategories(){
 
   products.forEach((product, index) => {
     categoriesContainer.innerHTML += `
-      <div class="card category-button mx-1 p-3" onclick="loadProducts('`+ index +`'); setActive(this);">
+      <div class="card category-button p-3" onclick="loadProducts('`+ index +`'); setActive(this);">
         <img src="img/icons/`+ product.image +`" class="icon-img">
         <h5 class="regular-text mt-1 mb-0">`+ product.category +`</h5>
       </div>

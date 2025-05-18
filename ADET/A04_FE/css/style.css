@@ -64,6 +64,7 @@ p {
   border-bottom: 1px solid black;
 }
 
+
 /* Top Section Styles */
 .top-section {
   height: 25dvh;
@@ -72,8 +73,16 @@ p {
 .categories-container {
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
+  gap: 10px;
+  overflow-x: auto;
   width: 100%;
+  scrollbar-width: none;
+}
+
+@media (pointer:fine) {
+  .categories-container:hover {
+    scrollbar-width: auto;
+  }
 }
 
 .category-button {
@@ -82,7 +91,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-width: 190px;
+  min-width: 180px;
 }
 
 .category-button:hover, .category-button.active {
@@ -113,7 +122,7 @@ p {
 
 /* Receipt Section Styles */
 .receipt-container {
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
@@ -134,5 +143,26 @@ p {
   background-color: black; 
   color: white; 
   border-radius: 5px; 
-  border-top: 10px solid white;
+}
+
+
+/* Media Queries */
+@media (max-width: 992px), (min-height: 900px) {
+  .top-section {
+    height: auto;
+  }
+
+  .category-button {
+    margin-bottom: 10px;
+  }
+
+  .products-section {
+    max-height: 55dvh;
+  }
+
+  .card.receipt {
+    height: auto;
+    max-height: 350px;
+    margin-top: 10px;
+  }
 }
