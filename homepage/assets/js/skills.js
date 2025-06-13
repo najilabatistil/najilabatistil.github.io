@@ -15,7 +15,7 @@ var skills = [
       {
         name: "JavaScript",
         image: "javascript.png",
-        rating: 2.5
+        rating: 3
       },
       {
         name: "Java",
@@ -55,12 +55,12 @@ var skills = [
       {
         name: "Git",
         image: "git.png",
-        rating: 3
+        rating: 2.5
       },
       {
         name: "Visual Studio Code",
         image: "vscode.png",
-        rating: 3
+        rating: 2.5
       },
       {
         name: "Eclipse",
@@ -75,7 +75,7 @@ var skills = [
       {
         name: "Figma",
         image: "figma.png",
-        rating: 2.5
+        rating: 3
       },
       {
         name: "Photoshop",
