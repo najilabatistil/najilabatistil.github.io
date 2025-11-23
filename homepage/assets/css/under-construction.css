@@ -1,11 +1,11 @@
 
 .heading {
   font-family: 'Zing Rust Base';
-  font-size: 7rem;
+  font-size: 5.5rem;
   line-height: 0.85;
   color: white;
   -webkit-text-stroke: 3px black; 
-  text-shadow: 3px 5px 0px black;
+  text-shadow: 2px 4px 0px black;
 }
 
 /* MEDIA QUERIES */
@@ -14,7 +14,6 @@
     font-size: 5rem;
     line-height: 1;
     -webkit-text-stroke: 2px black; 
-    text-shadow: 2px 4px 0px black;
   }
 }
 
