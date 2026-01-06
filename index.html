@@ -4,42 +4,171 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Site Under Construction</title>
+  <title>Najila Joanne | Home</title>
   <link rel="icon" href="homepage/assets/img/logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://db.onlinewebfonts.com/c/ec11ddc9fa834d65ab94debb6af73080?family=Zing+Rust+Base" rel="stylesheet">
   <link rel="stylesheet" href="homepage/assets/css/style.css">
-  <link rel="stylesheet" href="homepage/assets/css/404.css">
-  <link rel="stylesheet" href="homepage/assets/css/under-construction.css">
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar fixed-top justify-content-between align-items-center">
+  <nav class="navbar navbar-expand-sm fixed-top justify-content-between align-items-center px-1">
     <div class="container">
-      <a class="navbar-brand" href="homepage/">
+      <a class="navbar-brand p-0" href="./">
         <img src="homepage/assets/img/logo.png" alt="Logo" width="30">
       </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-items navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="ADET/">Applications Development</a></li>
+              <li><a class="dropdown-item" href="WD/">Web Development</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
     </div>
   </nav>
 
   <!-- Background -->
   <img src="homepage/assets/img/background.png" class="background">
 
-  <!-- Text -->
-  <div class="center-display text-center container-stroke p-4 p-sm-5" style="background-color: var(--yellow);">
-    <h1 class="heading">
-      <i class="bi bi-gear-fill"></i>
-    </h1>
-    <h1 class="heading">
-      Site Under Construction
-    </h1>
-    <h3 class="sub">
-      Come back soon!
-    </h3>
+  <!-- Landing -->
+  <div class="container-fluid main-container mt-3">
+    <div class="row d-flex justify-content-center align-items-center">
+      <!-- Display -->
+      <div class="col">
+        <img src="homepage/assets/img/wordmark-bg.png" class="display-background">
+        <img src="homepage/assets/img/wordmark-text.png" class="display-text">
+      </div>
+      <!-- Button -->
+      <div class="col display-button d-flex justify-content-center">
+        <a href="#about" class="btn custom-btn my-1">
+          See What I Do!
+        </a>
+      </div>
+    </div>
   </div>
-  
-</body>
+
+  <!-- About -->
+  <div class="container container-stroke py-4 mb-4" id="about" style="background-color: var(--yellow);">
+    <div class="row d-flex justify-content-center align-items-center px-3">
+      <!-- Image -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center"> 
+        <img src="homepage/assets/img/profile.png" class="profile-img">
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-5">
+        <!-- Intro -->
+        <div class="row">
+          <div class="col">
+            <h1 class="display-4 text-center text-lg-start">Hello there!</h1>
+            <p class="text-start">
+              Welcome to my portfolio! I’m Najila, a third-year IT student the Polytechnic University of the Philippines - Sto. Tomas Campus.
+              <br><br>
+              Here, you’ll find a collection of my academic projects and activities that demonstrates the skills and knowledge I've gained throughout my academic journey.
+              <br><br>
+              Take a look around and see what I’ve been working on!
+            </p>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-6">
+            <a href="#skills" class="btn custom-btn w-100 my-1">
+              View My Skills
+            </a>
+          </div>
+          <div class="col-12 col-sm-6">
+            <a href="#projects" class="btn custom-btn w-100 my-1">
+              View My Projects
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="container container-stroke py-5 my-4" id="skills" style="background-color: var(--blueGreen);">
+    <div class="row text-center">
+      <h1 class="display-4">Skills</h1>
+    </div>
+
+    <div class="row justify-content-center pt-3">
+      <div class="col-12 col-sm-10" id="skillsContainer">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="container container-stroke py-5 my-4" id="projects" style="background-color: var(--red);">
+    <div class="row text-center">
+      <h1 class="display-4">Projects</h1>
+    </div>
+    <div class="row justify-content-center pt-3">
+      <div class="col-12 col-md-10">
+        <div class="row justify-content-center" id="projectsContainer">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="container-fluid text-center mt-4 py-4" style="background-color: var(--blue); border-top: 2px solid black">
+    <img src="homepage/assets/img/logo.png" alt="Logo" width="30" class="pb-1">
+    <h5>© 2024 Najila Joanne Batistil.</h5>
+
+    <!-- Links -->
+    <ul class="d-flex flex-row justify-content-center">
+      <li>
+        <a href="https://github.com/najilabatistil/" class="nav-link footer-link px-3" target="_blank" >
+          <i class="bi bi-github h2"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/najila.batistil/" class="nav-link footer-link px-3" target="_blank">
+          <i class="bi bi-facebook h2"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/naaaaajiiii/" class="nav-link footer-link px-3" target="_blank">
+          <i class="bi bi-instagram h2"></i>
+        </a>
+      </li>
+      <li>
+        <a href="mailto: najilabatistil1@gmail.com" class="nav-link footer-link px-3" target="_blank">
+          <i class="bi bi-envelope-at-fill h2"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="homepage/assets/js/skills.js"></script>
+  <script src="homepage/assets/js/projects.js"></script>
 
 </html>
