@@ -22,10 +22,9 @@ var projects = [
   }
 ]
 
-function createProjectCard() {
+function createADETCard(container) {
   for (var i = 0; i < projects.length; i++) {
     var project = projects[i];
-    var container = document.getElementById("projectsContainer");
 
     var btnVisibility = (project.link == "n/a") ? "d-none" : "";
 
@@ -65,5 +64,3 @@ function createProjectCard() {
     `
   }
 }
-
-createProjectCard();
