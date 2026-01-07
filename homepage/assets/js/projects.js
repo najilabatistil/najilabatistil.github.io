@@ -15,25 +15,24 @@ var projects = [
   }
 ]
 
-function createProjectCard() {
+function createProjectCard(container) {
   for (var i = 0; i < projects.length; i++) {
     var project = projects[i];
-    var projectsContainer = document.getElementById("projectsContainer");
 
-    projectsContainer.innerHTML += 
+    container.innerHTML += 
     `
-      <div class="col-12 col-lg-10 d-flex justify-content-center my-3">
+      <div class="col-12 col-md-11 col-lg-10 d-flex justify-content-center my-2">
         <div class="card w-100 p-3">
           <div class="row">
             <!-- Image -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-sm-6">
               <div class="project-img-container d-flex justify-content-center align-items-center h-100 p-3">
                 <img src="homepage/assets/img/projects/`+ project.image +`" class="project-img" alt="` + project.alt + `">
               </div>
             </div>
 
             <!-- Body -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-sm-6">
               <div class="card-body px-0 my-auto">
                 <h4>`+ project.name +`</h2>
                 <p>My projects under the `+ project.name +` course.</p>
@@ -45,8 +44,6 @@ function createProjectCard() {
           </div>
         </div>
       </div>
-    `
+    `;
   }
 }
-
-createProjectCard();

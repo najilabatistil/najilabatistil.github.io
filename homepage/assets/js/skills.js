@@ -16,16 +16,6 @@ var skills = [
         name: "JavaScript",
         image: "javascript.png",
         rating: 3
-      },
-      {
-        name: "Java",
-        image: "java.png",
-        rating: 2
-      },
-      {
-        name: "Python",
-        image: "python.png",
-        rating: 1.5
       }
     ]
   },
@@ -50,7 +40,7 @@ var skills = [
     ]
   },
   {
-    category: "Tools",
+    category: "Tools & Technologies",
     cards: [
       {
         name: "Git",
@@ -58,43 +48,33 @@ var skills = [
         rating: 2.5
       },
       {
-        name: "Visual Studio Code",
-        image: "vscode.png",
-        rating: 2.5
-      },
-      {
-        name: "Eclipse",
-        image: "eclipse.svg",
-        rating: 2
-      }
-    ]
-  },
-  {
-    category: "Design",
-    cards: [
-      {
         name: "Figma",
         image: "figma.png",
         rating: 3
       },
       {
-        name: "Photoshop",
-        image: "photoshop.png",
-        rating: 2
+        name: "Visual Studio Code",
+        image: "vscode.png",
+        rating: 2.5
+      },
+      {
+        name: "Postman",
+        image: "postman.svg",
+        rating: 1
       }
     ]
   }
 ]
 
-function createSkillsSection() {
-  var skillsContainer = document.getElementById("skillsContainer");
+function createSkillsSection(container) {
+  container.innerHTML = '';
 
   skills.forEach(skill => {
-    skillsContainer.innerHTML +=
+    container.innerHTML +=
       `
-      <div class="row pb-2">
+      <div class="row d-flex justify-content-center mb-3">
         <div class="col-12 p-0">
-          <h2 class="text-center text-md-start">`+ skill.category + `</h2>
+          <h2 class="text-center">`+ skill.category + `</h2>
         </div>
         `+ createSkillCards(skill.cards) + `
       </div>
@@ -122,9 +102,8 @@ function createSkillCards(skillCards) {
   var skillList = '';
 
   skillCards.forEach(skillCard => {
-    skillList +=
-    `
-    <div class="col-6 col-md-4 col-lg-3 d-flex justify-content-center px-1 px-lg-2 my-3">
+    skillList += `
+      <div class="col-6 col-sm-4 col-lg-3 d-flex justify-content-center px-1 px-lg-2 my-3">
         <div class="card p-3 h-100">
           <!-- Image -->
           <div class="skill-img-container d-flex justify-content-center align-items-center p-3">
@@ -143,5 +122,3 @@ function createSkillCards(skillCards) {
 
   return skillList;
 }
-
-createSkillsSection();
