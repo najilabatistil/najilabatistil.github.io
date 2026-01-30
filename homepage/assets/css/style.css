@@ -13,7 +13,7 @@
   --blueHover: #63d0e8;
   --yellow: #FCDF92;
   --red: #ED566A;
-  --green: #94EF9B;
+  --green: #76e47f;
   --purple: #6aa8e6;
   --orange: #fabf81;
   --theme-color: white;
@@ -146,6 +146,7 @@ p {
   text-shadow: 1px 2px 0px black;
   background-color: var(--blue);
   border: 2px solid black;
+  border-radius: 10px;
   box-shadow: 4px 4px 0px black;
   transition: transform 0.3s ease;
 }

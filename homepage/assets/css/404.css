@@ -1,50 +1,40 @@
+@font-face {
+  font-family: 'Zing Rust Base';
+  src: url('https://najilabatistil.github.io/homepage/assets/fonts/Zing-Rust-Base.woff2') format('woff2'),
+    url('https://najilabatistil.github.io//homepage/assets/fonts/Zing-Rust-Base.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mono45 Headline Regular';
+  src: url('https://najilabatistil.github.io/homepage/assets/fonts/Mono45Headline-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .heading-404 {
   font-family: 'Zing Rust Base';
   font-size: 15.625rem;
-  line-height: 0.85;
+  text-align: center;
   color: white;
-  -webkit-text-stroke: 3px black; 
-  text-shadow: 3px 6px 0px black;
+  -webkit-text-stroke: 2px black; 
+  text-shadow: 7px 10px 0px black;
 }
 
 .sub {
-  font-family: 'Mono45 Headline';
+  font-family: 'Mono45 Headline Regular';
   font-size: 2.5rem;
-  line-height: 1;
+  text-align: center;
 }
 
-.display-container {
-  height: 100vh;
-  position: relative;
-}
-
-.center-display {
-  position: absolute;
-  top: 50%;
-  left: 50%; 
-  transform: translate(-50%, -50%);
-  border: 2px solid black;
-  box-shadow: 6px 6px 0px black;
-}
-
-/* MEDIA QUERIES */
 @media (max-width: 790px) {
   .heading-404 {
     font-size: 10rem;
-    line-height: 1;
+    text-shadow: 5px 8px 0px black;
   }
   
   .sub {
-    font-size: 1.75rem;
-    line-height: normal;
-  }
-}
-
-@media (max-width: 450px) {
-  .heading-404 {
-    font-size: 6.5rem;
-    line-height: 1;
-    text-shadow: 2px 5px 0px black;
+    font-size: 2rem;
   }
 }
