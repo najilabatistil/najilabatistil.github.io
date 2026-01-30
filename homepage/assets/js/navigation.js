@@ -3,7 +3,7 @@ function getPageFromURL() {
   return params.get('page') || 'about';
 }
 
-function loadPage(page) {
+function loadPage(page = 'about') {
   activateNavbarLink(page);
   setBackgroundandTitle(page);
   loadContent(page);
