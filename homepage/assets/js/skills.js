@@ -106,7 +106,7 @@ function createSkillCards(skillCards) {
       <div class="col-6 col-sm-4 col-lg-3 d-flex justify-content-center px-1 px-lg-2 my-3">
         <div class="card p-3 h-100">
           <!-- Image -->
-          <div class="skill-img-container d-flex justify-content-center align-items-center p-3">
+          <div class="card-img-container d-flex justify-content-center align-items-center p-3">
             <img src="homepage/assets/img/skills/`+ skillCard.image + `" class="skill-img" alt="` + skillCard.name + ` Logo">
           </div>
 

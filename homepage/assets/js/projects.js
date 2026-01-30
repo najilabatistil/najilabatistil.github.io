@@ -26,7 +26,7 @@ function createProjectCard(container) {
           <div class="row">
             <!-- Image -->
             <div class="col-12 col-sm-6">
-              <div class="project-img-container d-flex justify-content-center align-items-center h-100 p-3">
+              <div class="card-img-container d-flex justify-content-center align-items-center h-100 p-3">
                 <img src="homepage/assets/img/projects/`+ project.image +`" class="project-img" alt="` + project.alt + `">
               </div>
             </div>

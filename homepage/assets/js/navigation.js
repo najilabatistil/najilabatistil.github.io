@@ -3,7 +3,7 @@ function getPageFromURL() {
   return params.get('page') || 'about';
 }
 
-function loadPage(page = 'about') {
+function loadPage(page) {
   activateNavbarLink(page);
   setBackgroundandTitle(page);
   loadContent(page);
@@ -30,7 +30,7 @@ function setBackgroundandTitle(page) {
 
   switch (page) {
     case 'about':
-      container.style.setProperty('--theme-color', 'var(--yellow)');
+      container.style.setProperty('--theme-color', 'var(--orange)');
       title.textContent = "Najila Joanne | About";
       break;
 
@@ -64,34 +64,67 @@ function setBackgroundandTitle(page) {
 
 function loadContent(page) {
   const container = document.getElementById('contentContainer');
+
+  showSkeleton();
   container.innerHTML = '';
 
   switch (page) {
     case 'about':
+      showSkeleton(); 
       fetch(`homepage/pages/${page}.html`)
         .then(res => res.text())
         .then(html => {
-          container.innerHTML = html;
+          setTimeout(() => {
+            container.innerHTML = html;
+            hideSkeleton();
+          }, 300);
         })
-        .catch(error => console.error('Error fetching HTML:', error));
+        .catch(error => console.error(error));
       break;
 
     case 'skills':
-      createSkillsSection(container);
+      showSkeleton(); 
+      setTimeout(() => {
+        createSkillsSection(container);
+        hideSkeleton();
+      }, 300);
       break;
 
     case 'projects':
-      createProjectCard(container);
+      showSkeleton(); 
+      setTimeout(() => {
+        createProjectCard(container);
+        hideSkeleton();
+      }, 300);
       break;
 
     case 'webdev':
-      createWDCard(container);
+      showSkeleton(); 
+      setTimeout(() => {
+        createWDCard(container);
+        hideSkeleton();
+      }, 300);
       break;
 
     case 'appdev':
-      createADETCard(container);
-
+      showSkeleton(); 
+      setTimeout(() => {
+        createADETCard(container);
+        hideSkeleton();
+      }, 300);
+      break;
+    
     default:
       break;
   }
+}
+
+function showSkeleton() {
+  document.getElementById('skeleton').style.display = 'flex';
+  document.getElementById('contentContainer').style.display = 'none';
+}
+
+function hideSkeleton() {
+  document.getElementById('skeleton').style.display = 'none';
+  document.getElementById('contentContainer').style.display = 'flex';
 }

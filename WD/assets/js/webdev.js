@@ -70,7 +70,7 @@ function createWDCard(container) {
           <div class="row h-100">
             <!-- Image -->
             <div class="col-12 col-md-6">
-              <div class="projectpg-img-container d-flex justify-content-center align-items-center h-100">
+              <div class="card-img-container d-flex justify-content-center align-items-center h-100">
                 <img src="assets/img/`+ project.thumbnail +`" class="projectpg-img">
               </div>
             </div>
@@ -88,7 +88,7 @@ function createWDCard(container) {
                     Visit <i class="bi bi-box-arrow-up-right"></i>
                   </a>
                   <a href="` + project.github + `" target="_blank" class="btn custom-btn">
-                    View Code on Github <i class="bi bi-github"></i>
+                    View on Github <i class="bi bi-github"></i>
                   </a>
                 </div>
               </div>
