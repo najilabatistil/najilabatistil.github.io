@@ -108,12 +108,17 @@ p {
   overflow: hidden;
 }
 
+.about-img {
+  transform: rotate(-6deg);
+  transition: transform 0.3s ease;
+}
+
 .card:hover {
   transform: scale(1.015);
 }
 
-.card:hover .skill-img, .card:hover .project-img {
-  transform: scale(1.045);
+.card:hover .about-img, .card:hover .skill-img, .card:hover .project-img {
+  transform: rotate(3deg) scale(1.045);
 }
 
 .profile-img {
@@ -133,6 +138,7 @@ p {
   max-height: 200px;
   aspect-ratio: 1 / 1;
   object-fit: contain;
+  transform: rotate(-6deg);
   transition: transform 0.3s ease;
 }
 
