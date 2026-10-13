@@ -147,9 +147,9 @@ function addToReceipt(price, code) {
 }
 
 function removeFromReceipt(code) {
-  let item = receiptList.findIndex(obj => obj['code'] === code);
+  let itemIndex = receiptList.findIndex(obj => obj['code'] === code);
 
-  if (item) {
+  if (itemIndex > -1) {
     receiptList.splice(item, 1);
     addTotal();
   }
@@ -157,7 +157,7 @@ function removeFromReceipt(code) {
   var itemElement = document.getElementById(code);
   itemElement.remove();
 
-  if (receiptList.length == 0) {
+  if (receiptList.length === 0) {
     isEmpty(true);
   }
 }
